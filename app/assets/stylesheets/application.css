@@ -26,6 +26,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background: #D1D1D1;
+	font-family: 'Sans-serif';
+  color: black;
 }
 ol, ul {
 	list-style: none;
@@ -45,54 +48,36 @@ table {
 
 _____________________________________________
 
-.body {
-  font-family: 'Sans-serif';
-  color: black;
-  background:#D1D1D1;
-}
 
 .imagesheader {
-  max-height: 100%;
-  list-style: none;
-  display:flex;
-     flex-direction: row;
-     flex-wrap:wrap;
-     justify-content: space-around;
-     align-content: flex-start;
-     align-items: flex-start;
+	width:100%;
+	margin:0 auto;
+}
+
+.header1 {
+ display: inline-block;
+ width:30%;
+}
+
+.header2 {
+ display: inline-block;
+ width:30%;
+}
+
+.header3 {
+	display: inline-block;
+  width:30%;
+	justify-content: flex-end;
 
 }
 
-
-.flex-item {
-  background: white;
-  padding:
-  height: 125px;
-  flex:1;
-  line-height: 150px;
-  color: white;
-  font-size: 3em;
-  text-align: center;
+.flex-header {
+ background: #B4D997;
+ flex:1;
+ color: white;
+ font-size: 3em;
+ text-align: center;
 }
-
-.flex-item2 {
-  flex:1;
-  align-content: flex-start
-}
-
-.flex-item3 {
-  flex:1;
-	align-content: center
-
-}
-
-.flex-item3 {
-  flex:1;
-  align-self:flex-end;
-}
-
-
-
 
 .imagestop
 {
@@ -106,6 +91,7 @@ _____________________________________________
      align-content: flex-start;
      align-items: flex-start;
      max-height:100%;
+		 background-color: #D1D1D1
  }
 
 .imagesbottom
@@ -119,4 +105,27 @@ _____________________________________________
      justify-content: space-around;
      align-content: flex-start;
      align-items: flex-start;
+		 background-color: #D1D1D1;
  }
+
+
+
+ .footer {
+  margin: 0;
+  list-style: none;
+
+  display:flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+     align-content: flex-start;
+     align-items: flex-start;
+ }
+
+ .flex-footer {
+  background: #45513A;
+  height: 125px;
+  flex:1;
+  line-height: 150px;
+  text-align: center;
+}
