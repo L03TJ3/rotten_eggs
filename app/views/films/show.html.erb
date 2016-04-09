@@ -2,11 +2,13 @@
 <h1>Film page</h1>
 <br  />
 
-<h1><%= @films.name %></h1>
-<p><%= @films.description %></p>
-
-<%= @posts.name %>
-<br  />
-<%= @posts.title %>
+<h1><%= @film.name %></h1>
+<p><%= @film.description %></p>
+<% @posts.each do |p| %>
+<%= p.name %>
 <br />
-<%= @posts.content %>
+
+<%= p.title %>
+<br />
+<%= p.content %>
+<% end %>

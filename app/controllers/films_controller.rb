@@ -4,8 +4,23 @@ class FilmsController < ApplicationController
   end
 
   def show
-    @films = Film.find( params[:id] )
-    @posts = Post.find( params[:id] )
+    @film = Film.find( params[:id] )
+    @posts = @film.posts
   end
 
+  def new
+    @post = Post.new
+  end
+
+  def create
+    post_params = params.require( :post ).permit( :name, :title, :content)
+
+    @post = Post.new( post_params )
+
+    if @post.save
+      redirect_to 'new'
+    else
+      render 'new'
+    end
+  end
 end
