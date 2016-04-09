@@ -52,8 +52,7 @@ _____________________________________________
 }
 
 .imagesheader {
-  max-height: 100%
-  margin: 0;
+  max-height: 100%;
   list-style: none;
   display:flex;
      flex-direction: row;
@@ -63,35 +62,6 @@ _____________________________________________
      align-items: flex-start;
 
 }
-
-.imagestop
-{
-  margin: 0;
-  list-style: none;
-
-     display:flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: space-around;
-     align-content: flex-start;
-     align-items: flex-start;
-     max-height:100%;
- }
-
-
-
-.imagesbottom
-{
-  margin: 0;
-  list-style: none;
-
-  display:flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: space-around;
-     align-content: flex-start;
-     align-items: flex-start;
- }
 
 
 .flex-item {
@@ -112,6 +82,7 @@ _____________________________________________
 
 .flex-item3 {
   flex:1;
+	align-content: center
 
 }
 
@@ -119,3 +90,33 @@ _____________________________________________
   flex:1;
   align-self:flex-end;
 }
+
+
+
+
+.imagestop
+{
+  margin: 0;
+  list-style: none;
+
+     display:flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+     align-content: flex-start;
+     align-items: flex-start;
+     max-height:100%;
+ }
+
+.imagesbottom
+{
+  margin: 0;
+  list-style: none;
+
+  display:flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+     align-content: flex-start;
+     align-items: flex-start;
+ }
