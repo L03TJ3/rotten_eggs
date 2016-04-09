@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20160409122844) do
     t.string   "name"
     t.string   "title"
     t.text     "content"
+    t.integer  "film_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

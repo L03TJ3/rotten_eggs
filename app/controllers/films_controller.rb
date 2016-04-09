@@ -4,8 +4,9 @@ class FilmsController < ApplicationController
   end
 
   def show
-    @films = Film.find( params[:id] )
-    @posts = Post.find( params[:id] )
+    @film = Film.find( params[:id] )
+    @posts = @film.posts
   end
+
 
 end
