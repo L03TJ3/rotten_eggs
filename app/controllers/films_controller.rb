@@ -5,6 +5,7 @@ class FilmsController < ApplicationController
 
   def show
     @films = Film.find( params[:id] )
+    @posts = Post.find( params[:id] )
   end
 
 end
